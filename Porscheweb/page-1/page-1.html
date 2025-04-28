@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>porsche</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        @font-face {
+            font-family: "freesentation";
+            src: url(/Users/dlwlsdn/Downloads/Freesentation-v2.000/Freesentation-4Regulartotf) format("ttf");
+        }
+
+        html {
+            font-family: "freesentation";
+        }
+
+        html,
+        header,
+        nav,
+        body,
+        ul,
+        li,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .thin {
+            font-weight: 100;
+        }
+
+        .Light {
+            font-weight: 300;
+        }
+
+        .regular {
+            font-weight: 400;
+        }
+
+        .med {
+            font-weight: 500;
+        }
+
+        .semib {
+            font-weight: 600;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .extb {
+            font-weight: 800;
+        }
+
+        .black {
+            font-weight: 900;
+        }
+
+
+        .px70 {
+            font-size: 70px;
+        }
+
+        .px60 {
+            font-size: 60px;
+        }
+
+        .px50 {
+            font-size: 50px;
+        }
+
+        .px40 {
+            font-size: 40px;
+        }
+
+        .px35 {
+            font-size: 35px;
+        }
+
+        .px30 {
+            font-size: 30px;
+        }
+
+        .px25 {
+            font-size: 25px;
+        }
+
+        .px20 {
+            font-size: 20px;
+        }
+
+        .px22 {
+            font-size: 22px;
+        }
+
+        .px18 {
+            font-size: 18px;
+        }
+
+        .px17 {
+            font-size: 17px;
+        }
+
+        .px15 {
+            font-size: 15px;
+        }
+
+        body header {
+            position: absolute;
+            z-index: 999;
+            width: 1920px;
+            height: 100px;
+            background-color: rgba(245, 245, 245, 0.015);
+        }
+
+        header nav {
+            width: 100%;
+            height: 100%;
+        }
+
+        header nav ul {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 35px auto;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .sec1 {
+            width: 1920px;
+            height: 1080px;
+            background-image: url(sec1_back.png);
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .sec1 div {
+            width: 80%;
+            position: relative;
+            left: 80px;
+            top: 360px;
+        }
+
+        .sec1 div .box {
+            width: 390px;
+            height: 94px;
+            border: 4px solid white;
+            text-align: center;
+            margin: 45px 0;
+        }
+
+        .sec1 div .box p {
+            padding: 23px 0;
+        }
+
+        header nav ul li .logo a img {
+            width: 316px;
+            height: 22px;
+        }
+
+        header nav ul li .menu {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        header nav ul li .menu div {
+            margin-left: 20px;
+        }
+
+        .sec2 {
+            width: 1920px;
+            height: 330px;
+        }
+
+        .sec2>div {
+            margin-top: 100px;
+
+        }
+
+        .sec2>div>div {
+            display: flex;
+            justify-content: center;
+        }
+
+        .sec2 div div .wbox {
+            width: 285px;
+            height: 106px;
+            border: 1px solid black;
+            text-align: center;
+            align-content: center;
+            margin: 5px;
+        }
+
+        .sec2 div div .bbox {
+            width: 285px;
+            height: 106px;
+            background-color: black;
+            text-align: center;
+            align-content: center;
+            margin: 5px;
+        }
+
+        .sec3 {
+            width: 1920px;
+            height: 5014px;
+        }
+
+        .sec3 div .fliter {
+            width: 164px;
+            height: 67px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            right: 0;
+        }
+
+        .sec3>div .px30.regular {
+            width: 373px;
+            height: 67px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            align-content: center;
+        }
+
+        .sec3 div .fliter>div {
+            color: white;
+        }
+
+        .sec3 div .fliter>img {
+            width: 29.5px;
+            height: 21px;
+        }
+
+        .modelinfo {
+            width: 534px;
+            height: 449px;
+            box-shadow: 10px 10px 10px rgba(3, 3, 3, 0.442);
+            padding: 34px 0px 0px 40px;
+            position: relative;
+            bottom: 100px;
+            left: 30px;
+        }
+
+        .onebox {
+            width: 710px;
+            height: 810px;
+            position: relative;
+        }
+
+
+        .modelinfo div>div .px30.semib {
+            margin-bottom: 10px;
+        }
+
+        .modelinfo div>a {
+
+            color: black;
+        }
+
+        footer {
+            width: 1690px;
+            height: 828px;
+            background-color: black;
+            color: white;
+            margin-top: 200px;
+            padding: 100px 115px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer .infore {
+            margin-top: 60px;
+        }
+
+        footer .infore ul {
+            margin-top: 30px;
+            height: 160px;
+
+        }
+
+        footer .infore ul li {
+            margin-top: 20px;
+            display: flex;
+        }
+
+        footer .infore ul li div {
+            width: 200px;
+        }
+
+        footer .sub {
+            position: relative;
+            top: -350px;
+            left: 1000px;
+            width: 690px;
+        }
+
+        footer .icon {
+            display: flex;
+            position: absolute;
+            right: 0;
+        }
+
+        footer div .px25.regular {
+            display: flex;
+            position: relative;
+        }
+
+        footer .sub div div .px18.semib {
+            color: black;
+
+        }
+
+        footer .sub div .px30.semib {
+            margin-bottom: 20px;
+        }
+
+        footer .icon div {
+            width: 42px;
+            height: 43px;
+            border-radius: 11px;
+            background-color: white;
+            text-align: center;
+            align-content: center;
+            margin-left: 9px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="menu">
+                            <img src="menu_bar.png" />
+                            <div class="px25 regular">메뉴</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="logo">
+                            <a href="#"><img src="logo_white.png" /></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="user">
+                            <a href="#"><img src="user.png" /></a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="sec1">
+            <div>
+                <div class="px70 black">The one and Always.</div>
+                <div class="box">
+                    <p class="px40 bold">911을 만나보세요</p>
+                </div>
+            </div>
+        </section>
+        <section class="sec2">
+            <div>
+                <div>
+                    <div class="wbox"><img src="718.png"></div>
+                    <div class="bbox"><img src="911.png"></div>
+                    <div class="wbox"><img src="taycan_logo.png"></div>
+                </div>
+                <div>
+                    <div class="wbox"><img src="panamena_logo.png"></div>
+                    <div class="wbox"><img src="macan_logo.png"></div>
+                    <div class="wbox"><img src="cayenne_logo.png"></div>
+                </div>
+            </div>
+        </section>
+        <script>
+            $(".sec2").mouseenter(
+                function () {
+                    $("header").css({
+                        position: "fixed",
+                        top: "0",
+                        left: "0",
+                        "background-color": "black"
+                    })
+                }
+            )
+            $(".sec1").mouseenter(
+                function () {
+                    $("header").css({
+                        position: "absolute",
+                        "background-color": "rgba(245, 245, 245, 0.015)"
+                    })
+                }
+            )
+        </script>
+        <section class="sec3">
+            <div style="width: 1560px;
+            position: relative;
+            margin: 0px auto;">
+                <div class="fliter">
+                    <img src="menu_bar.png">
+                    <div class="px35 regular">필터</div>
+                </div>
+                <div class="px30 regular">저장된 구성 불러오기</div>
+            </div>
+            <script>
+                $(".fliter").parent("div").css({
+                    "display": "flex"
+                })
+            </script>
+            <div>
+                <div style="width: 1560px;
+                height: 93px;
+                background-color: black;
+                color: white;
+                margin: 0px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                margin-top: 100px;">
+
+                    <div class="px40 semib">Carrera Models</div>
+                    <div class="px30 med" style="position: absolute;
+                    right: 34px;
+                    bottom: 23px;">모델 비교 ></div>
+                </div>
+                <div style="display: flex;
+                justify-content: center;">
+                    <div class="onebox">
+                        <div><img style="width: 705px;
+                    height: 397px;" src="extcam01.png">
+                        </div>
+                        <div class="modelinfo">
+                            <div>
+                                <div>
+                                    <div class="px30 semib">911 Carrera GTS Coupé</div>
+                                    <div class="px22 regular">₩229,800,000부터(VAT 포함)</div>
+                                </div>
+                                <div>
+                                    <p class="px22 regular">나만의 포르쉐 만들기</p>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">541 PS</div>
+                                    <div class="px17 regular">Power combined (PS)</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">3.0 s</div>
+                                    <div class="px17 regular">Acceleration 0 - 100 km/h with Sport Chrono Package</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">312 km/h</div>
+                                    <div class="px17 regular">Top speed</div>
+                                </div>
+                                <div class="px17 regular">자동 변속기 · 후륜 구동</div>
+                                <div><a href="#" class="px22 semib">기술 데이터 및 기본 사양</a></div>
+                            </div>
+                        </div>
+                        <script>
+                            $("p").parent(".modelinfo div").css({
+                                "width": "254px",
+                                "height": "58px",
+                                "background-color": "black",
+                                "border-radius": "10px",
+                                "text-align": "center",
+                                "align-content": "center"
+                            })
+                            $("p").css("color", "white")
+                            $(".modelinfo>div").children("div").css({
+                                "margin": "15px 0px"
+                            })
+                        </script>
+                    </div>
+                    <div class="onebox">
+                        <div><img style="width: 705px;
+                    height: 397px;" src="extcam01(1).png">
+                        </div>
+                        <div class="modelinfo">
+                            <div>
+                                <div>
+                                    <div class="px30 semib">911 Carrera 4 GTS Coupé</div>
+                                    <div class="px22 regular">₩239,400,000부터(VAT 포함)</div>
+                                </div>
+                                <div>
+                                    <p class="px22 regular">나만의 포르쉐 만들기</p>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">541 PS</div>
+                                    <div class="px17 regular">Power combined (PS)</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">3.0 s</div>
+                                    <div class="px17 regular">Acceleration 0 - 100 km/h with Sport Chrono Package</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">312 km/h</div>
+                                    <div class="px17 regular">Top speed</div>
+                                </div>
+                                <div class="px17 regular">자동 변속기 · 사륜구동(AWD)</div>
+                                <div><a href="#" class="px22 semib">기술 데이터 및 기본 사양</a></div>
+                            </div>
+                        </div>
+                        <script>
+                            $("p").parent(".modelinfo div").css({
+                                "width": "254px",
+                                "height": "58px",
+                                "background-color": "black",
+                                "border-radius": "10px",
+                                "text-align": "center",
+                                "align-content": "center"
+                            })
+                            $("p").css("color", "white")
+                            $(".modelinfo>div").children("div").css({
+                                "margin": "15px 0px"
+                            })
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="width: 1560px;
+                height: 93px;
+                background-color: black;
+                color: white;
+                margin: 0px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                margin-top: 100px;">
+
+                    <div class="px40 semib">Carrera Cabriolet Models</div>
+                    <div class="px30 med" style="position: absolute;
+                    right: 34px;
+                    bottom: 23px;">모델 비교 ></div>
+                </div>
+                <div style="display: flex;
+                justify-content: center;">
+                    <div class="onebox">
+                        <div><img style="width: 705px;
+                    height: 397px;" src="extcam01(2).png">
+                        </div>
+                        <div class="modelinfo">
+                            <div>
+                                <div>
+                                    <div class="px30 semib">911 Carrera GTS Cabriolet</div>
+                                    <div class="px22 regular">₩246,200,000부터(VAT 포함)</div>
+                                </div>
+                                <div>
+                                    <p class="px22 regular">나만의 포르쉐 만들기</p>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">541 PS</div>
+                                    <div class="px17 regular">Power combined (PS)</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">3.1 s</div>
+                                    <div class="px17 regular">Acceleration 0 - 100 km/h with Sport Chrono Package</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">312 km/h</div>
+                                    <div class="px17 regular">Top speed</div>
+                                </div>
+                                <div class="px17 regular">자동 변속기 · 후륜 구동</div>
+                                <div><a href="#" class="px22 semib">기술 데이터 및 기본 사양</a></div>
+                            </div>
+                        </div>
+                        <script>
+                            $("p").parent(".modelinfo div").css({
+                                "width": "254px",
+                                "height": "58px",
+                                "background-color": "black",
+                                "border-radius": "10px",
+                                "text-align": "center",
+                                "align-content": "center"
+                            })
+                            $("p").css("color", "white")
+                            $(".modelinfo>div").children("div").css({
+                                "margin": "15px 0px"
+                            })
+                        </script>
+                    </div>
+                    <div class="onebox">
+                        <div><img style="width: 705px;
+                    height: 397px;" src="extcam01(3).png">
+                        </div>
+                        <div class="modelinfo">
+                            <div>
+                                <div>
+                                    <div class="px30 semib">911 Carrera 4 GTS Cabriolet</div>
+                                    <div class="px22 regular">₩255,800,000부터(VAT 포함)</div>
+                                </div>
+                                <div>
+                                    <p class="px22 regular">나만의 포르쉐 만들기</p>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">541 PS</div>
+                                    <div class="px17 regular">Power combined (PS)</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">3.1 s</div>
+                                    <div class="px17 regular">Acceleration 0 - 100 km/h with Sport Chrono Package</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">312 km/h</div>
+                                    <div class="px17 regular">Top speed</div>
+                                </div>
+                                <div class="px17 regular">자동 변속기 · 사륜구동(AWD)</div>
+                                <div><a href="#" class="px22 semib">기술 데이터 및 기본 사양</a></div>
+                            </div>
+                        </div>
+                        <script>
+                            $("p").parent(".modelinfo div").css({
+                                "width": "254px",
+                                "height": "58px",
+                                "background-color": "black",
+                                "border-radius": "10px",
+                                "text-align": "center",
+                                "align-content": "center"
+                            })
+                            $("p").css("color", "white")
+                            $(".modelinfo>div").children("div").css({
+                                "margin": "15px 0px"
+                            })
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="width: 1560px;
+                height: 93px;
+                background-color: black;
+                color: white;
+                margin: 0px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                margin-top: 100px;">
+
+                    <div class="px40 semib">Targa Models</div>
+                    <div class="px30 med" style="position: absolute;
+                    right: 34px;
+                    bottom: 23px;">모델 비교 ></div>
+                </div>
+                <div style="display: flex;
+                justify-content: center;">
+                    <div class="onebox">
+                        <div><img style="width: 705px;
+                    height: 397px;" src="extcam01(4).png">
+                        </div>
+                        <div class="modelinfo">
+                            <div>
+                                <div>
+                                    <div class="px30 semib">911 Targa 4 GTS</div>
+                                    <div class="px22 regular">₩256,000,000부터(VAT 포함)</div>
+                                </div>
+                                <div>
+                                    <p class="px22 regular">나만의 포르쉐 만들기</p>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">541 PS</div>
+                                    <div class="px17 regular">Power combined (PS)</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">3.1 s</div>
+                                    <div class="px17 regular">Acceleration 0 - 100 km/h with Sport Chrono Package</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">312 km/h</div>
+                                    <div class="px17 regular">Top speed</div>
+                                </div>
+                                <div class="px17 regular">자동 변속기 · 후륜 구동</div>
+                                <div><a href="#" class="px22 semib">기술 데이터 및 기본 사양</a></div>
+                            </div>
+                        </div>
+                        <script>
+                            $("p").parent(".modelinfo div").css({
+                                "width": "254px",
+                                "height": "58px",
+                                "background-color": "black",
+                                "border-radius": "10px",
+                                "text-align": "center",
+                                "align-content": "center"
+                            })
+                            $("p").css("color", "white")
+                            $(".modelinfo>div").children("div").css({
+                                "margin": "15px 0px"
+                            })
+                        </script>
+                    </div>
+                    <div class="onebox" style="visibility: hidden;">
+                        <div><img style="width: 705px;
+                    height: 397px;" src="extcam01(3).png">
+                        </div>
+                        <div class="modelinfo">
+                            <div>
+                                <div>
+                                    <div class="px30 semib">911 Carrera 4 GTS Cabriolet</div>
+                                    <div class="px22 regular">₩255,800,000부터(VAT 포함)</div>
+                                </div>
+                                <div>
+                                    <p class="px22 regular">나만의 포르쉐 만들기</p>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">541 PS</div>
+                                    <div class="px17 regular">Power combined (PS)</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">3.1 s</div>
+                                    <div class="px17 regular">Acceleration 0 - 100 km/h with Sport Chrono Package</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">312 km/h</div>
+                                    <div class="px17 regular">Top speed</div>
+                                </div>
+                                <div class="px17 regular">자동 변속기 · 사륜구동(AWD)</div>
+                                <div><a href="#" class="px22 semib">기술 데이터 및 기본 사양</a></div>
+                            </div>
+                        </div>
+                        <script>
+                            $("p").parent(".modelinfo div").css({
+                                "width": "254px",
+                                "height": "58px",
+                                "background-color": "black",
+                                "border-radius": "10px",
+                                "text-align": "center",
+                                "align-content": "center"
+                            })
+                            $("p").css("color", "white")
+                            $(".modelinfo>div").children("div").css({
+                                "margin": "15px 0px"
+                            })
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="width: 1560px;
+                height: 93px;
+                background-color: black;
+                color: white;
+                margin: 0px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                margin-top: 100px;">
+
+                    <div class="px40 semib">GT Models</div>
+                    <div class="px30 med" style="position: absolute;
+                    right: 34px;
+                    bottom: 23px;">모델 비교 ></div>
+                </div>
+                <div style="display: flex;
+                justify-content: center;">
+                    <div class="onebox">
+                        <div><img style="width: 705px;
+                    height: 397px;" src="extcam01(5).png">
+                        </div>
+                        <div class="modelinfo">
+                            <div>
+                                <div>
+                                    <div class="px30 semib">911 GT3</div>
+                                    <div class="px22 regular">₩270,500,000부터(VAT 포함)</div>
+                                </div>
+                                <div>
+                                    <p class="px22 regular">나만의 포르쉐 만들기</p>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">510 PS</div>
+                                    <div class="px17 regular">Power combined (PS)</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">3.4 s</div>
+                                    <div class="px17 regular">Acceleration 0 - 100 km/h</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">311 km/h</div>
+                                    <div class="px17 regular">Top speed</div>
+                                </div>
+                                <div class="px17 regular">자동 변속기 · 후륜 구동</div>
+                                <div><a href="#" class="px22 semib">기술 데이터 및 기본 사양</a></div>
+                            </div>
+                        </div>
+                        <script>
+                            $("p").parent(".modelinfo div").css({
+                                "width": "254px",
+                                "height": "58px",
+                                "background-color": "black",
+                                "border-radius": "10px",
+                                "text-align": "center",
+                                "align-content": "center"
+                            })
+                            $("p").css("color", "white")
+                            $(".modelinfo>div").children("div").css({
+                                "margin": "15px 0px"
+                            })
+                        </script>
+                    </div>
+                    <div class="onebox">
+                        <div><img style="width: 705px;
+                    height: 397px;" src="extcam01(6).png">
+                        </div>
+                        <div class="modelinfo">
+                            <div>
+                                <div>
+                                    <div class="px30 semib">911 GT3 with Touring Package</div>
+                                    <div class="px22 regular">₩270,500,000부터(VAT 포함)</div>
+                                </div>
+                                <div>
+                                    <p class="px22 regular">나만의 포르쉐 만들기</p>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">510 PS</div>
+                                    <div class="px17 regular">Power combined (PS)</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">3.4 s</div>
+                                    <div class="px17 regular">Acceleration 0 - 100 km/h</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">311 km/h</div>
+                                    <div class="px17 regular">Top speed</div>
+                                </div>
+                                <div class="px17 regular">자동 변속기 · 후륜구동</div>
+                                <div><a href="#" class="px22 semib">기술 데이터 및 기본 사양</a></div>
+                            </div>
+                        </div>
+                        <script>
+                            $("p").parent(".modelinfo div").css({
+                                "width": "254px",
+                                "height": "58px",
+                                "background-color": "black",
+                                "border-radius": "10px",
+                                "text-align": "center",
+                                "align-content": "center"
+                            })
+                            $("p").css("color", "white")
+                            $(".modelinfo>div").children("div").css({
+                                "margin": "15px 0px"
+                            })
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="width: 1560px;
+                height: 93px;
+                background-color: black;
+                color: white;
+                margin: 0px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                margin-top: 100px;">
+
+                    <div class="px40 semib">Special Models</div>
+                    <div class="px30 med" style="position: absolute;
+                    right: 34px;
+                    bottom: 23px;">모델 비교 ></div>
+                </div>
+                <div style="display: flex;
+                justify-content: center;">
+                    <div class="onebox">
+                        <div><img style="width: 705px;
+                    height: 397px;" src="extcam01(7).png">
+                        </div>
+                        <div class="modelinfo">
+                            <div>
+                                <div>
+                                    <div class="px30 semib">911 Turbo 50 Years</div>
+                                    <div class="px22 regular">₩344,400,000부터(VAT 포함)</div>
+                                </div>
+                                <div>
+                                    <p class="px22 regular">나만의 포르쉐 만들기</p>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">662 PS</div>
+                                    <div class="px17 regular">Power combined (PS)</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">2.7 s</div>
+                                    <div class="px17 regular">Acceleration 0 - 100 km/h with Sport Chrono Package</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">330 km/h</div>
+                                    <div class="px17 regular">Top speed</div>
+                                </div>
+                                <div class="px17 regular">자동 변속기 · 사륜 구동(AWD)</div>
+                                <div><a href="#" class="px22 semib">기술 데이터 및 기본 사양</a></div>
+                            </div>
+                        </div>
+                        <script>
+                            $("p").parent(".modelinfo div").css({
+                                "width": "254px",
+                                "height": "58px",
+                                "background-color": "black",
+                                "border-radius": "10px",
+                                "text-align": "center",
+                                "align-content": "center"
+                            })
+                            $("p").css("color", "white")
+                            $(".modelinfo>div").children("div").css({
+                                "margin": "15px 0px"
+                            })
+                        </script>
+                    </div>
+                    <div class="onebox" style="visibility: hidden;">
+                        <div><img style="width: 705px;
+                    height: 397px;" src="extcam01(3).png">
+                        </div>
+                        <div class="modelinfo">
+                            <div>
+                                <div>
+                                    <div class="px30 semib">911 Carrera 4 GTS Cabriolet</div>
+                                    <div class="px22 regular">₩255,800,000부터(VAT 포함)</div>
+                                </div>
+                                <div>
+                                    <p class="px22 regular">나만의 포르쉐 만들기</p>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">541 PS</div>
+                                    <div class="px17 regular">Power combined (PS)</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">3.1 s</div>
+                                    <div class="px17 regular">Acceleration 0 - 100 km/h with Sport Chrono Package</div>
+                                </div>
+                                <div>
+                                    <div class="px25 semib">312 km/h</div>
+                                    <div class="px17 regular">Top speed</div>
+                                </div>
+                                <div class="px17 regular">자동 변속기 · 사륜구동(AWD)</div>
+                                <div><a href="#" class="px22 semib">기술 데이터 및 기본 사양</a></div>
+                            </div>
+                        </div>
+                        <script>
+                            $("p").parent(".modelinfo div").css({
+                                "width": "254px",
+                                "height": "58px",
+                                "background-color": "black",
+                                "border-radius": "10px",
+                                "text-align": "center",
+                                "align-content": "center"
+                            })
+                            $("p").css("color", "white")
+                            $(".modelinfo>div").children("div").css({
+                                "margin": "15px 0px"
+                            })
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="border-top: 1px solid #707070;
+        width: 1914.24px;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 200px;">
+            <div class="px17 regular">
+                차량 이미지는 실제 모델과 다를 수 있으며, 국내 적용 사양 및 구성과 각 옵션 적용 여부에 따라 실제와 차이가 있을 수 있습니다.<br>
+                * 본 페이지에 기재된 차량 가격은 권장소비자가격(MSRP)으로, 취득세, 운송료 및 기타 핸들링에 대한 비용은 포함하지 않으며 실제 판매 가격과 상이할 수 있습니다.
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div style="height: 400px;">
+                    <div class="lang">
+                        <div class="px30 semib">현재 지역/언어</div>
+                        <div>
+                            <div><img src="korea.png" /></div>
+                            <div class="px20 regular">대한민국/한국어</div>
+                            <div><a href="#" class="px20 semib">변경</a></div>
+                        </div>
+                    </div>
+                    <script>
+                        $(".px30.semib").next("div").css({
+                            display: "flex",
+                            "align-items": "center",
+                        })
+                        $("footer .lang > div").children().each(
+                            function () {
+                                if ($(this).attr("class") != "undefined") {
+                                    $(this).css("margin", "10px 10px")
+                                }
+                            }
+                        )
+                    </script>
+                    <div class="infore">
+                        <div class="px30 semib">포르쉐에 관하여</div>
+                        <ul class="px20 regular">
+                            <li>
+                                <div>포르쉐 기업 정보</div>
+                                <div>포르쉐 코리아 소개</div>
+                            </li>
+                            <li>
+                                <div>지속 가능성</div>
+                                <div>채용정보</div>
+                            </li>
+                            <li>
+                                <div>포르쉐 딜러 지원</div>
+                                <div>포르쉐 계열사</div>
+                            </li>
+                            <li>
+                                <div>뉴스룸 및 보도자료</div>
+                                <div>문의하기</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub">
+                        <div>
+                            <div class="px30 semib">뉴스레터</div>
+                            <div class="px25 regular">최신 뉴스를 메일로 받아보세요.
+                                <div><a href="#" class="px18 semib">구독하기</a></div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="px30 semib">문의사항</div>
+                            <div class="px25 regular">문의사항이 있으신가요?
+                                <div><a href="#" class="px18 semib">문의하기</a></div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="px30 semib">소셜 미디어</div>
+                            <div class="px25 regular">
+                                소셜 미디어를 통해 저희에게<br />
+                                연락하십시오.
+                                <div class="icon">
+                                    <div>
+                                        <a href="#"><img src="facebook.png" /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"><img src="instar.png" /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"><img src="pinter.png" /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"><img src="yotube.png" /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"><img src="x.png" /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"><img src="in.png" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $(".px18.semib").parent().css({
+                                    "border-radius": "11px",
+                                    "background-color": "white",
+                                    width: "302px",
+                                    height: "44px",
+                                    "text-align": "center",
+                                    "align-content": "center",
+                                    position: "absolute",
+                                    top: "-10px",
+                                    right: "0"
+                                })
+                                $(".sub").children("div").css("margin-bottom", "30px")
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 1690px;
+            border-top: 2px solid #868686;
+            margin-top: 50px;">
+                    <div class="px15 semib" style="margin-top: 30px;">
+                        <div>
+                            © 2025 Porsche Korea Ltd. Legal Notice | 개인정보처리방침 | 쿠키 정책 | 위치정보사업 이용약관 |
+                            위치기반서비스 이용약관 | 포르쉐 그룹 부정비리 제보 시스템<br />
+                            | Open Source Software Notice | PO Terms and Conditions | 전기차 배터리 제조사(셀) 안내 | 소비자 판매 가격표
+                        </div>
+                        <div style="margin: 30px 0px;">포르쉐 고객센터 080-8100-911</div>
+                        <div>
+                            ※ 표기된 연비는 표준 모드에 의한 것으로 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라
+                            실주행연비와 차이가 있습니다.<br />
+                            ※ 본 웹사이트에 기재된 내용은 사전에 예고 없이 변경될 수 있으므로 실제 차량과 다를 수 있습니다.<br />
+                            ※ 차량 이미지는 실제 모델과 다를 수 있으며, 국내 적용 사양 및 구성에 따라 차이가 있을 수 있습니다.<br />
+                            ※ 국내 출시 이전 차량의 경우 국내 공인 연비 정보 및 타이어 에너지소비효율 정보가 존재하지 않을 수
+                            있습니다.<br />
+                            ※ 개별소비세 인하 관련 공지사항<br />
+                            포르쉐 코리아는 정부의 일시적 개별소비세 인하 정책에 따라 적용 대상 차량에 대해 개별소비세 감면 혜택을
+                            적용합니다.<br />
+                            자세한 사항은 포르쉐 센터를 통하여 문의하시기 바랍니다.<br />
+                            ※ 본 페이지에 기재된 차량 가격은 권장소비자가격(MSRP)으로, 선택 사양, 취득세, 운송료 및 기타 핸들링에 대한
+                            비용은 포함하지 않으며 실제 판매 가격과 상이할 수 있습니다.<br />
+                            ※ 기재된 수치는 통제된 상황에서 얻을 수 있는 최고 수치로서 환경 및 운전 상황에 따라 달라질 수 있습니다.
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 316px;
+               margin: 70px auto;"><img src="로고 흰색.Png" style="width: 316px;
+             " /></div>
+            </div>
+        </footer>
+    </body>
+
+</html>

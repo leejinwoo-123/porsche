@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>porsche</title>
+  <script src="jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    @font-face {
+      font-family: "freesentation";
+      src: url(/Users/dlwlsdn/Downloads/Freesentation-v2.000/Freesentation-4Regulartotf) format("ttf");
+    }
+
+    html {
+      font-family: "freesentation";
+    }
+
+    html,
+    header,
+    nav,
+    body,
+    ul,
+    li,
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .thin {
+      font-weight: 100;
+    }
+
+    .Light {
+      font-weight: 300;
+    }
+
+    .regular {
+      font-weight: 400;
+    }
+
+    .med {
+      font-weight: 500;
+    }
+
+    .semib {
+      font-weight: 600;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .extb {
+      font-weight: 800;
+    }
+
+    .black {
+      font-weight: 900;
+    }
+
+    .px70 {
+      font-size: 70px;
+    }
+
+    .px50 {
+      font-size: 50px;
+    }
+
+    .px40 {
+      font-size: 40px;
+    }
+
+    .px35 {
+      font-size: 35px;
+    }
+
+    .px30 {
+      font-size: 30px;
+    }
+
+    .px25 {
+      font-size: 25px;
+    }
+
+    .px20 {
+      font-size: 20px;
+    }
+
+    .px18 {
+      font-size: 18px;
+    }
+
+    .px15 {
+      font-size: 15px;
+    }
+
+    body header {
+      position: absolute;
+      z-index: 999;
+      width: 1920px;
+      height: 100px;
+      background-color: rgba(245, 245, 245, 0.015);
+    }
+
+    header nav {
+      width: 100%;
+      height: 100%;
+    }
+
+    header nav ul {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 35px auto;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .sec1 {
+      width: 1920px;
+      height: 1080px;
+      background-image: url(1.png);
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .sec1 div {
+      width: 80%;
+      position: relative;
+      left: 80px;
+      top: 360px;
+    }
+
+    .sec1 div .box {
+      width: 390px;
+      height: 94px;
+      border: 4px solid white;
+      text-align: center;
+      margin: 45px 0;
+    }
+
+    .sec1 div .box p {
+      padding: 23px 0;
+    }
+
+    header nav ul li .logo a img {
+      width: 316px;
+      height: 22px;
+    }
+
+    header nav ul li .menu {
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    header nav ul li .menu div {
+      margin-left: 20px;
+    }
+
+    .sec2 {
+      width: 1920px;
+      height: 590px;
+      color: white;
+    }
+
+    .sec2 .px50.black {
+      width: 780px;
+      height: 290px;
+      background: url(gts.png);
+    }
+
+    .sec2 .px50.black>div {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      margin: 0px auto;
+    }
+
+    .sec2 .px50.black>div img {
+      width: 50px;
+      height: 58px;
+      position: relative;
+      top: 7px;
+      margin-left: 300px;
+    }
+
+    .sec2>div {
+      width: 1920px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sec2 .px50.black+div {
+      margin-left: 4px;
+    }
+
+    .sec2 .backimg2 {
+      width: 770px;
+      height: 143.12px;
+      background: url(macan_buy.png);
+    }
+
+    .sec2 .backimg3 {
+      width: 770px;
+      height: 143.12px;
+      margin-top: 4px;
+      background: url(718.png);
+    }
+
+    .sec2>div {
+      display: flex;
+    }
+
+    .sec2 .backimg2>div {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+
+    .sec2 .backimg3>div {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+
+    .sec2 .backimg2>div img {
+      width: 50px;
+      height: 58px;
+      position: relative;
+      top: 7px;
+      margin-left: 200px;
+    }
+
+    .sec2 .backimg3>div img {
+      width: 50px;
+      height: 58px;
+      position: relative;
+      top: 7px;
+      margin-left: 380px;
+    }
+
+    .sec2 .backimg2>div {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      margin: 0px auto;
+    }
+
+    .sec2 .backimg3>div {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      margin: 0px auto;
+    }
+
+    .sec3 {
+      width: 1920px;
+      height: 1100px;
+    }
+
+    .swiper {
+      width: 1920px;
+      height: 944px;
+    }
+
+    .swiper-slide {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      width: 1920px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 714px;
+      height: 944px;
+      object-fit: cover;
+    }
+
+    .swiper-button-next {
+      position: absolute;
+      right: 50px;
+      top: 50%;
+      z-index: 10;
+    }
+
+    .swiper-button-prev {
+      position: absolute;
+      left: 50px;
+      top: 50%;
+      z-index: 10;
+    }
+
+    .big {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .sec3 .bottom>div {
+      width: 300px;
+      height: 100px;
+      border-radius: 15px;
+      background: black;
+      color: white;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      align-content: center;
+      text-align: center;
+    }
+
+    .sec3 .bottom>div>p {
+      text-align: center;
+    }
+
+    .text {
+      width: 725px;
+      height: 944px;
+      position: relative;
+      margin: 0px 0px 0px 100px;
+    }
+
+    .sec3 .px70.black {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .sec4 {
+      width: 1740px;
+      height: 1080px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      left: 80px;
+      margin-top: 200px;
+    }
+
+    .sec4 .text {
+      width: 80%;
+      position: absolute;
+    }
+
+    .sec4>div>img {
+      position: absolute;
+      right: -100px;
+      bottom: 00px;
+    }
+
+    .sec4 .text div {
+      margin-bottom: 20px;
+    }
+
+    .sec4 input {
+      width: 438px;
+      height: 73px;
+      border: 3px solid #707070;
+      border-radius: 12px;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 400px;
+      text-align: center;
+    }
+
+    .sec4 input+img {
+      position: absolute;
+      top: 230px;
+      left: 25px;
+    }
+
+    .sec5 {
+      width: 1560px;
+      height: 441px;
+      color: white;
+      margin-top: 150px;
+    }
+
+    .sec5 .px70.black {
+      color: black;
+      height: 100px;
+    }
+
+    .sec5 .px50.black {
+      width: 780px;
+      height: 290px;
+      background: url(e-perfor.png);
+    }
+
+    .sec5 .px50.black>div {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      margin: 0px auto;
+    }
+
+    .sec5 .px50.black>div img {
+      width: 50px;
+      height: 58px;
+      position: relative;
+      top: 7px;
+      margin-left: 0px;
+    }
+
+    .sec5 .imgs {
+      margin-top: 50px;
+    }
+
+    .sec5>div {
+      width: 1920px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sec5 .px50.black+div {
+      margin-left: 4px;
+    }
+
+    .sec5 .backimg2 {
+      width: 770px;
+      height: 143.12px;
+      background: url(connect.png);
+    }
+
+    .sec5 .backimg3 {
+      width: 770px;
+      height: 143.12px;
+      margin-top: 4px;
+      background: url(parts.png);
+    }
+
+    .sec5>div {
+      display: flex;
+    }
+
+    .sec5 .backimg2>div {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+
+    .sec5 .backimg3>div {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+
+    .sec5 .backimg2>div img {
+      width: 50px;
+      height: 58px;
+      position: relative;
+      top: 7px;
+
+    }
+
+    .sec5 .backimg3>div img {
+      width: 50px;
+      height: 58px;
+      position: relative;
+      top: 7px;
+
+    }
+
+    .sec5 .backimg2>div {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin: 0px auto;
+    }
+
+    .sec5 .backimg3>div {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin: 0px auto;
+    }
+
+    footer {
+      width: 1690px;
+      height: 828px;
+      background-color: black;
+      color: white;
+      margin-top: 300px;
+      padding: 100px 115px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    footer .infore {
+      margin-top: 60px;
+    }
+
+    footer .infore ul {
+      margin-top: 30px;
+      height: 160px;
+
+    }
+
+    footer .infore ul li {
+      margin-top: 20px;
+      display: flex;
+    }
+
+    footer .infore ul li div {
+      width: 200px;
+    }
+
+    footer .sub {
+      position: relative;
+      top: -350px;
+      left: 1000px;
+      width: 690px;
+    }
+
+    footer .icon {
+      display: flex;
+      position: absolute;
+      right: 0;
+    }
+
+    footer div .px25.regular {
+      display: flex;
+      position: relative;
+    }
+
+    footer .sub div div .px18.semib {
+      color: black;
+
+    }
+
+    footer .sub div .px30.semib {
+      margin-bottom: 20px;
+    }
+
+    footer .icon div {
+      width: 42px;
+      height: 43px;
+      border-radius: 11px;
+      background-color: white;
+      text-align: center;
+      align-content: center;
+      margin-left: 9px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <div class="menu">
+            <img src="menu_bar.png" />
+            <div class="px25 regular">메뉴</div>
+          </div>
+        </li>
+
+        <li>
+          <div class="logo">
+            <a href="#"><img src="logo_white.png" /></a>
+          </div>
+        </li>
+        <li>
+          <div class="user">
+            <a href="#"><img src="user.png" /></a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="sec1">
+    <div>
+      <div class="px70 black">More of what you love.</div>
+      <div class="box">
+        <p class="px40 bold">718을 만나보세요</p>
+      </div>
+    </div>
+  </section>
+  <section class="sec2">
+    <div>
+      <div class="px50 black">
+        <div>
+          <div>Panamera GTS</div>
+          <div><img src="→.png" /></div>
+        </div>
+      </div>
+      <div>
+        <div class="backimg2">
+          <div>
+            <div class="px40 semib box1">마칸 일렉트릭 신규 계약 혜택</div>
+            <div><img src="→.png" /></div>
+          </div>
+        </div>
+        <div class="backimg3">
+          <div>
+            <div class="px40 semib box2">718 GTS 4.0</div>
+            <div><img src="→.png" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $(".sec2").mouseenter(
+      function () {
+        $("header").css({
+          position: "fixed",
+          top: "0",
+          left: "0",
+          "background-color": "black"
+        })
+      }
+    )
+    $(".sec1").mouseenter(
+      function () {
+        $("header").css({
+          position: "absolute",
+          "background-color": "rgba(245, 245, 245, 0.015)"
+        })
+      }
+    )
+
+  </script>
+  <section class="sec3">
+    <div class="px70 black">Models</div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div><img src="panamela.png" /></div>
+          <div class="text">
+            <div class="big">
+              <div class="px50 med">
+                포르쉐 특유의 역동성과 탁월한 <br />
+                편안함이 공존하는 4인승<br />
+                스포츠 럭셔리 세단.
+              </div>
+              <div class="px35 regular">176,700,000 KRW 부터</div>
+            </div>
+            <div class="bottom">
+              <div>
+                <p class="px25 med">모든 파나메라 모델</p>
+              </div>
+              <div>
+                <p class="px30 med">나만의 파나매라 만들기</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div><img src="718-2.png"></div>
+          <div class="text">
+            <div class="big">
+              <div class="px50 med">
+                드라이빙 다이내믹스를 지배하는<br />
+                미드 엔진 로드스터.
+              </div>
+              <div class="px35 regular">130,500,000 KRW 부터</div>
+            </div>
+            <div class="bottom">
+              <div>
+                <p class="px25 med">모든 718 모델</p>
+              </div>
+              <div>
+                <p class="px30 med">나만의 718 만들기</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div><img src="911.png"></div>
+          <div class="text">
+            <div class="big">
+              <div class="px50 med">
+                시대를 초월한 디자인과 수평대향<br />
+                리어 엔진의 강력한 퍼포먼스로<br />
+                완성된 스포츠카의 아이콘.
+              </div>
+              <div class="px35 regular">229,800,000 KRW 부터</div>
+            </div>
+            <div class="bottom">
+              <div>
+                <p class="px25 med">모든 911 모델</p>
+              </div>
+              <div>
+                <p class="px30 med">나만의 911 만들기</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div><img src="taycan.png"></div>
+          <div class="text">
+            <div class="big">
+              <div class="px50 med">
+                포르쉐의 정신과 포르쉐의 미래를<br />
+                드러내는 순수 전기 스포츠카.
+              </div>
+              <div class="px35 regular">129,900,000 KRW 부터</div>
+            </div>
+            <div class="bottom">
+              <div>
+                <p class="px25 med">모든 타이칸 모델</p>
+              </div>
+              <div>
+                <p class="px30 med">나만의 타이칸 만들기</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div><img src="macan.png"></div>
+          <div class="text">
+            <div class="big">
+              <div class="px50 med">
+                일상을 스포티하게 바꿔줄 짜릿한<br />
+                선택.
+              </div>
+              <div class="px35 regular">99,100,000 KRW 부터</div>
+            </div>
+            <div class="bottom">
+              <div>
+                <p class="px25 med">모든 마칸 모델</p>
+              </div>
+              <div>
+                <p class="px30 med">나만의 마칸 만들기</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div><img src="cayenne.png"></div>
+          <div class="text">
+            <div class="big">
+              <div class="px50 med">
+                5시트의 여유로움, 강렬한 디자인,<br />
+                압도적인 퍼포먼스를 자랑하는<br />
+                스포츠카.
+              </div>
+              <div class="px35 regular">139,800,000 KRW 부터</div>
+            </div>
+            <div class="bottom">
+              <div>
+                <p class="px25 med">모든 카이엔 모델</p>
+              </div>
+              <div>
+                <p class="px30 med">나만의 카이엔 만들기</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      $(".px25.med").parent("div").css({
+        border: "3px solid black",
+        width: "255px",
+        height: "80px",
+        "border-radius": "5px",
+
+        "position": "absolute",
+        "right": "0px",
+        "top": "-100px",
+      });
+      $(".px25.med").css({
+        "text-align": "center",
+        "line-height": "80px",
+      })
+      $(".px30.med").parent("div").css({
+        width: "500px",
+        height: "100px",
+        "border-radius": "5px",
+        background: "black",
+        color: "white",
+      })
+      $(".px30.med").css({
+        "text-align": "center",
+        "line-height": "100px",
+      })
+      $(".px35.regular").css({
+        "margin-top": "20px",
+        "color": "gray",
+      })
+    </script>
+  </section>
+  <section class="sec4">
+    <div class="text">
+      <div class="px50 bold">포르쉐 인증 중고차 찾기</div>
+      <div class="px20 regular">
+        포르쉐 파인더(Porsche Finder)로 꿈의 포르쉐를 쉽고 편리하게 검색해보십시오.<br />
+        현재 위치를 입력하면 주변의 포르쉐 인증 중고차를 한눈에 확인할 수 있습니다.
+      </div>
+      <div class="px20 regular">검색을 원하는 위치를 입력하십시오.</div>
+      <input type="text" placeholder="        도시 또는 우편번호를 입력하십시오." /><img src="search.png">
+    </div>
+    <div><img src="center_find.png" /></div>
+  </section>
+  <section class=sec5>
+    <div class="px70 black">Discover</div>
+    <div class="imgs">
+      <div class="px50 black">
+        <div>
+          <div>Porsche E-Performance.</div>
+          <div><img src="→.png" /></div>
+        </div>
+      </div>
+      <div>
+        <div class="backimg2">
+          <div>
+            <div class="px40 semib box1">Porsche Connect</div>
+            <div><img src="→.png" /></div>
+          </div>
+        </div>
+        <div class="backimg3">
+          <div>
+            <div class="px40 semib box2">순수 부품 가격 조회</div>
+            <div><img src="→.png" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(".sec5 img").parent("div").css({
+        width: "50px",
+        height: "58px"
+      })
+    </script>
+  </section>
+  <footer>
+    <div class="footer">
+      <div style="height: 400px;">
+        <div class="lang">
+          <div class="px30 semib">현재 지역/언어</div>
+          <div>
+            <div><img src="korea.png" /></div>
+            <div class="px20 regular">대한민국/한국어</div>
+            <div><a href="#" class="px20 semib">변경</a></div>
+          </div>
+        </div>
+        <script>
+          $(".px30.semib").next("div").css({
+            display: "flex",
+            "align-items": "center",
+          })
+          $("footer .lang > div").children().each(
+            function () {
+              if ($(this).attr("class") != "undefined") {
+                $(this).css("margin", "10px 10px")
+              }
+            }
+          )
+        </script>
+        <div class="infore">
+          <div class="px30 semib">포르쉐에 관하여</div>
+          <ul class="px20 regular">
+            <li>
+              <div>포르쉐 기업 정보</div>
+              <div>포르쉐 코리아 소개</div>
+            </li>
+            <li>
+              <div>지속 가능성</div>
+              <div>채용정보</div>
+            </li>
+            <li>
+              <div>포르쉐 딜러 지원</div>
+              <div>포르쉐 계열사</div>
+            </li>
+            <li>
+              <div>뉴스룸 및 보도자료</div>
+              <div>문의하기</div>
+            </li>
+          </ul>
+        </div>
+        <div class="sub">
+          <div>
+            <div class="px30 semib">뉴스레터</div>
+            <div class="px25 regular">최신 뉴스를 메일로 받아보세요.
+              <div><a href="#" class="px18 semib">구독하기</a></div>
+            </div>
+
+          </div>
+          <div>
+            <div class="px30 semib">문의사항</div>
+            <div class="px25 regular">문의사항이 있으신가요?
+              <div><a href="#" class="px18 semib">문의하기</a></div>
+            </div>
+
+          </div>
+          <div>
+            <div class="px30 semib">소셜 미디어</div>
+            <div class="px25 regular">
+              소셜 미디어를 통해 저희에게<br />
+              연락하십시오.
+              <div class="icon">
+                <div>
+                  <a href="#"><img src="facebook.png" /></a>
+                </div>
+                <div>
+                  <a href="#"><img src="instar.png" /></a>
+                </div>
+                <div>
+                  <a href="#"><img src="pinter.png" /></a>
+                </div>
+                <div>
+                  <a href="#"><img src="yotube.png" /></a>
+                </div>
+                <div>
+                  <a href="#"><img src="x.png" /></a>
+                </div>
+                <div>
+                  <a href="#"><img src="in.png" /></a>
+                </div>
+              </div>
+            </div>
+            <script>
+              $(".px18.semib").parent().css({
+                "border-radius": "11px",
+                "background-color": "white",
+                width: "302px",
+                height: "44px",
+                "text-align": "center",
+                "align-content": "center",
+                position: "absolute",
+                top: "-10px",
+                right: "0"
+              })
+              $(".sub").children("div").css("margin-bottom", "30px")
+            </script>
+          </div>
+        </div>
+      </div>
+      <div style="width: 1690px;
+    border-top: 2px solid #868686;
+    margin-top: 50px;">
+        <div class="px15 semib" style="margin-top: 30px;">
+          <div>
+            © 2025 Porsche Korea Ltd. Legal Notice | 개인정보처리방침 | 쿠키 정책 | 위치정보사업 이용약관 |
+            위치기반서비스 이용약관 | 포르쉐 그룹 부정비리 제보 시스템<br />
+            | Open Source Software Notice | PO Terms and Conditions | 전기차 배터리 제조사(셀) 안내 | 소비자 판매 가격표
+          </div>
+          <div style="margin: 30px 0px;">포르쉐 고객센터 080-8100-911</div>
+          <div>
+            ※ 표기된 연비는 표준 모드에 의한 것으로 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라
+            실주행연비와 차이가 있습니다.<br />
+            ※ 본 웹사이트에 기재된 내용은 사전에 예고 없이 변경될 수 있으므로 실제 차량과 다를 수 있습니다.<br />
+            ※ 차량 이미지는 실제 모델과 다를 수 있으며, 국내 적용 사양 및 구성에 따라 차이가 있을 수 있습니다.<br />
+            ※ 국내 출시 이전 차량의 경우 국내 공인 연비 정보 및 타이어 에너지소비효율 정보가 존재하지 않을 수
+            있습니다.<br />
+            ※ 개별소비세 인하 관련 공지사항<br />
+            포르쉐 코리아는 정부의 일시적 개별소비세 인하 정책에 따라 적용 대상 차량에 대해 개별소비세 감면 혜택을
+            적용합니다.<br />
+            자세한 사항은 포르쉐 센터를 통하여 문의하시기 바랍니다.<br />
+            ※ 본 페이지에 기재된 차량 가격은 권장소비자가격(MSRP)으로, 선택 사양, 취득세, 운송료 및 기타 핸들링에 대한
+            비용은 포함하지 않으며 실제 판매 가격과 상이할 수 있습니다.<br />
+            ※ 기재된 수치는 통제된 상황에서 얻을 수 있는 최고 수치로서 환경 및 운전 상황에 따라 달라질 수 있습니다.
+          </div>
+        </div>
+      </div>
+      <div style="width: 316px;
+       margin: 70px auto;"><img src="로고 흰색.Png" style="width: 316px;
+     " /></div>
+    </div>
+  </footer>
+</body>
+
+</html>
